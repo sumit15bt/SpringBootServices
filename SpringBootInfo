@@ -1,0 +1,43 @@
+what is spring boot ?
+Spring is framewoek allowed to do lot of stuf and boot is somwething bootstrap the spring application.
+iT IS EASY TO CREATE stand-alone,production-grade spring based  application that we can just run.
+
+What is spring ?
+* Application Framework
+* Programming and configuration
+* Infrastructure support
+ PROBLEM :-
+	* Huge problem
+	* Multiple setup steps (can connect to mongodb,ignite,postgress) 
+	* multiple configuration.
+	* Multiple build and deploy steps.
+
+ {{{{{{{{{ SO we can Abstract these steps and only focus on business logic. }}}}}}}}}}}
+
+SPRING BOOT -->
+* Opinionated
+* convection over configuration
+* Stand alone application.
+* producation ready
+
+change port in application.property file as-->
+server.port=8082 // means don't use 8080 default port og tomcat.
+                  // giving inputto tomcat function as parameter.
+
+>>>> WHY hard code URls are bad ??
+	* Changes require code updates
+	* Dynamic URLs in the cloud
+	* Load Balancing
+	* multiple Drawbacks.
+
+SERVICE Discovery : It means how services (microServices) interact with each other.
+		    It's disAdvantage is it is little bit chatty.
+
+CLIENT ---> DISCOVERY SERVICES ---> SERVICE 1 / SERVICE 2 / SERVICE 3.
+
+EXAMPLE of microservices - EUREKA , RIBBON , HYSTERIX , ZUUL . 
+
+
+
+
+
