@@ -30,6 +30,31 @@ server.port=8082 // means don't use 8080 default port og tomcat.
 	* Load Balancing
 	* multiple Drawbacks.
 
+
+###  SpringApplication.run(DemoApi3Application.class, args);  what does it do ...????
+-> set up default congiguration 
+-> start spring application application context
+-> perform classpath Scan(A/c to anotation. i.e., @Controller as controller ,@Service as service, @Dao as dataAcessObject Class etc...)
+-> Starts Tomcat server (with given argument OR default)
+
+### What is controller ??
+-> It is a class marked with annotation has info about --
+	* What URl access triggers it ?
+	* What method to run when accessed ?
+
+NOTE :- @RequestMappinng maps only GET method by default.To map other http methods,you'll have to specify it in the annotation.
+
+Arrays.AsList(<ParticularClass Instances>) give JSON
+
+### What is BILL OF MATERIALS ??
+-> different certain conbination of materials (a/c to pom.xml) handled by default for jars and their versions with preset  values.
+
+### Why embedded Tomcat server ??
+-> 1. convenience : no need to download tomcat server .
+   2. server container config. is now application config. (every-thing in one package.)
+   3. StandAlone Application. (easy to deploy,handle,run,develop) which fulfills spring boot requirement.
+   4. useful for microservices architechure.
+
 SERVICE Discovery : It means how services (microServices) interact with each other.
 		    It's disAdvantage is it is little bit chatty.
 
@@ -38,6 +63,27 @@ CLIENT ---> DISCOVERY SERVICES ---> SERVICE 1 / SERVICE 2 / SERVICE 3.
 EXAMPLE of microservices - EUREKA , RIBBON , HYSTERIX , ZUUL . 
 
 
+EXAMPLE   
+#### What is course API ???
+->  Resources : Topic,Course and lesson (A topic have multiple courses and A courses consistes of multiple lesson. )
+
+	* GET /topic Get (All topics)
+	* GET /topic/id  (gets the topic)
+	* POST /topics  (create new topic)
+	* PUT /topics/id (Update the topic)
+	* DELETE /topics/id (delete the topic)
 
 
+### DEPLOYMENT in ubuntu--->
+1. sudo apt install maven
+2. go to spring boot project folder i.e., cd projects/springBootProject
+3. mvn clean install (It creates jar file for that particular project.
+4. java -jar target/<FILENAME>.jar
 
+
+---------------OR------------------------
+change (jar) to (war) in  pom.xml   for creating war file instead.
+Deployed...................................
+
+### What is Spring Boot Actuator
+---> Spring Boot Actuator is a sub-project of the Spring Boot Framework. It includes a number of additional features that help us to monitor 		and manage the Spring Boot application. 
