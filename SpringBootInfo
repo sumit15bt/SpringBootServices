@@ -1,3 +1,16 @@
+Spring AND different version ----------------------------------------------------->
+
+Spring is popular due ---
+ -> Dependency injection (Inversion of Control) i.e., autowiring etc.
+ -> extendable like Individual framework inclusion without omitting the other framework identity etc... JPA ,hibernate etc..
+
+Different version :-
+ 1.Spring 2.5 made annotation driven configuration possible
+ 2. Spring 3.5 made great use of java-5 
+ 3. Spring 4.0 is  the first version fully support java-8 features,Minimum version of java used spring 4 is JAVA SE 6. 
+
+
+
 what is spring boot ?
 Spring is framewoek allowed to do lot of stuf and boot is somwething bootstrap the spring application.
 iT IS EASY TO CREATE stand-alone,production-grade spring based  application that we can just run.

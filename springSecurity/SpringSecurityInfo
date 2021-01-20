@@ -1,0 +1,11 @@
+-------------------------------------------------------------------SpringSecurity------------------------------------------------------------
+dependency ==> thymeleaf,web ,security
+
+tailwindcss & tailblocks--> for html page 
+
+
+ create this(any_NAME like AppSecurityConfig) class and extends WebSecurityConfigurerAdapter and override  UserDetailsService also Add 
+ @Configuration AND  @EnableWebSecurity
+
+UserDetails is inbuild class in spring Security.
+NOTE : - Spring (Spring Security) is about authentication As well as Authorisation .
